@@ -16,8 +16,6 @@ function changeSociaMediaLinks(links){
     }
 }
 
-changeSociaMediaLinks(userSocialMedia);
-
 function getGitHubProfileInfos(userGithub) {
 
     const url = `https://api.github.com/users/${userGithub.github}`;
@@ -34,7 +32,6 @@ function getGitHubProfileInfos(userGithub) {
 }
 
 getGitHubProfileInfos(userSocialMedia);
+changeSociaMediaLinks(userSocialMedia);
 
-
-//arrow function
 
