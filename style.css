@@ -23,7 +23,8 @@ main {
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    min-height: 812px;
     padding-bottom: 20px;
 }
 
