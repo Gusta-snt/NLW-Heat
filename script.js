@@ -27,8 +27,9 @@ function getGitHubProfileInfos(userGithub) {
         userLogin.textContent = data.login;
         githubLink.href = data.html_url;
         userImg.src = data.avatar_url;
-        userImg.alt = `Foto de ${data.name}`
+        userImg.alt = `Foto de ${data.name}`;
         Bio.textContent = data.bio;
+        tittleName.textContent = `${data.name} - DoWhile 2021`;
     });
     
 }

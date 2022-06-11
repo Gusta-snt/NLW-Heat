@@ -1,27 +1,30 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,body {
+body {
 
     --black:#202024;
 
     --gray: #E1E1E6;
 
-    height: 100%;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-}
 
-body {
     display: grid;
     place-items: center;
 }
 
 main {
     background: url(images/background.svg);
-    width: 375px;
-    height: 812px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 .container {
@@ -55,14 +58,12 @@ main {
 
 h1 {
     font-size: 1.5rem;
-
     margin-top: 1.5rem;
 }
 
 a {
     color: var(--gray);
     text-decoration: none;
-
     margin-top: .25rem;
     display: flex;
     justify-content: center;
