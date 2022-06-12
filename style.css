@@ -13,25 +13,20 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 
-    display: grid;
-    place-items: center;
 }
 
 main {
-    background: url(images/background.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    min-height: 812px;
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #121214;
+    height: auto;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 650px;
+    height: 812px;
     text-align: center;
     color: var(--gray);
 }
@@ -80,8 +75,43 @@ p {
 ul {
     margin-top: 4rem;
     list-style: none;
-    padding: 0;
     display: flex;
     gap: .5rem;
     justify-content: center;
+}
+
+#faixa {
+    display: none;
+}
+
+@media only screen and (min-width:650px) {
+
+    main {
+        background: url(images/degrades.svg) no-repeat center/cover;
+        background-color: #121214;
+    }
+    
+    .container {
+        background: url(images/desktop.svg) no-repeat center/cover;
+        height: 540px;
+        width: 358px;
+        position: relative;
+        margin-top: 140px;
+        
+    }
+
+    .avatar {
+        margin: 4.5rem auto 0;
+    }
+
+    #faixa {
+        display: block;
+        width: 64px;
+        height: 158px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+    }
+
 }
