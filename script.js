@@ -1,10 +1,6 @@
-const userSocialMedia = {
-    github: "Gusta-snt",
-    youtube: "channel/UCgkgbE1_iUgCPFsWvlI9laQ",
-    facebook: "#",
-    twitter: "#",
-    instagram: "gustavo_santosfr"
-}
+import userSocialMedia from './index.js';
+
+
 
 function changeSociaMediaLinks(links){
     //userName.textContent = "Gustavo Ferreira";

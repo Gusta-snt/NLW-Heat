@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(../images/backgroundIndex.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: #121214;
+}
+
+.tittles {
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#inputGithub, #inputInstagram, #inputYouTube {
+    background-color: #202024;
+    border: none;
+    border-bottom: 2px solid #FFCD1E;
+    color: #C4C4C4;
+    font-size: 24px;
+    font-weight: bold;
+    width: 280px;
+    height: 36px;
+    margin-top: 33px;
+}
+
+#inputFacebook, #inputTwitter {
+    background-color: #202024;
+    border: none;
+    border-bottom: 2px solid #FF008E;
+    color: #C4C4C4;
+    font-size: 24px;
+    font-weight: bold;
+    width: 280px;
+    height: 36px;
+    margin-top: 33px;
+}
+
+button {
+    font-size: 35px;
+    font-weight: bold;
+    width: 350px;
+    height: 60px;
+    background: linear-gradient(121.48deg, #FF008E 2.96%, #FFCD1E 68.99%);
+    border-radius: 7px;
+    border: none;
+    margin-top: 86px;
+    margin-bottom: 20px;
+}
+
+.form {
+    background: url(../images/desktop.svg);
+    width: 358px;
+    height: 540px;
+    padding-top: 160px;
+    margin-right: 200px;
+    margin-top: 40px;
+    position: relative;
+
+}
+
+.faixa {
+    position: absolute;
+    background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+    z-index: 1;
+    top: -40px;
+    right: 147px;
+    width: 64px;
+    height: 59px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 358px;
+}
