@@ -1,22 +1,18 @@
-import userSocialMedia from './index.js';
-
-
-
-function changeSociaMediaLinks(links){
+function changeSociaMediaLinks(){
     //userName.textContent = "Gustavo Ferreira";
     //githubLink.href = `https://github.com/${userSocialMedia.github}`;
 
     for(let li of socialLinks.children){
         const social = li.getAttribute("class");
-        li.children[0].href = `https://${social}.com/${links[social]}`
+        li.children[0].href = `https://${social}.com/${localStorage[social]}`
     }
 }
 
-changeSociaMediaLinks(userSocialMedia);
+changeSociaMediaLinks();
 
-function getGitHubProfileInfos(userGithub) {
+function getGitHubProfileInfos() {
 
-    const url = `https://api.github.com/users/${userGithub.github}`;
+    const url = `https://api.github.com/users/${localStorage.github}`;
 
     fetch(url).then(response => response.json()).then(data => {
         userName.textContent = data.name;
@@ -30,7 +26,7 @@ function getGitHubProfileInfos(userGithub) {
     
 }
 
-getGitHubProfileInfos(userSocialMedia);
+getGitHubProfileInfos();
 
 
 //arrow function

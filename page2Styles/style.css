@@ -24,7 +24,7 @@ main {
 }
 
 .container {
-    background: url(images/background.svg) no-repeat center/cover;
+    background: url(../images/background.svg) no-repeat center/cover;
     width: 650px;
     height: 812px;
     text-align: center;
@@ -73,7 +73,7 @@ p {
 }
 
 ul {
-    margin-top: 4rem;
+    margin-top: 2rem;
     list-style: none;
     display: flex;
     gap: .5rem;
@@ -87,12 +87,12 @@ ul {
 @media only screen and (min-width:650px) {
 
     main {
-        background: url(images/degrades.svg) no-repeat center/cover;
+        background: url(../images/degrades.svg) no-repeat center/cover;
         background-color: #121214;
     }
     
     .container {
-        background: url(images/desktop.svg) no-repeat center/cover;
+        background: url(../images/desktop.svg) no-repeat center/cover;
         height: 540px;
         width: 358px;
         position: relative;
@@ -113,5 +113,6 @@ ul {
         top: 0;
         background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
     }
+
 
 }
